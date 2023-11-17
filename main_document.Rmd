@@ -75,3 +75,15 @@ Task: Create a merge conflict, by making an edit on the same file in github and 
 variable_1 <- c("1","2","3","4","5")
 
 ```
+
+# Global Biodiversity Information Facility 
+
+With Dag Endresen, GBIF Norway
+
+**Why open research data?**
+
+Traditional science had less opportunities, but with these new methodologies create new possibilities. Skills for open research will be in demand. We are in the middle of an ongoing paradigm shift in scientific practice (and impact metrics). This process is moving fast.
+
+**FAIR**
+
+Producing machine-readable data in addition to human-readable data. There are a range of different data principles connected to FAIR.
