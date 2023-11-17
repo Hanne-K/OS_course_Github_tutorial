@@ -5,7 +5,9 @@ output: html_notebook
 
 **First steps**
 
-Learning about master files. Can rename the master file to something other than "master". Committing should be done often,
+See: Version Control with Git and GitHub (biostats-r.github.io)
+
+Learning about master files. Can rename the master file to something other than "master". Committing should be done often, for instance for each new function or figure.
 
 Problems with setting up Github: If the push-button is not clear green, you have a bad connection. Go to the terminal and write git push.
 
@@ -15,6 +17,7 @@ library(tidyverse)
 
 usethis::git_vaccinate()
 usethis::use_github()
+
 
 ```
 
@@ -34,4 +37,41 @@ The file stores the information about what types of files it should ignore when 
 
 In the terminal, we have all the power. Can go to the terminal tab within RStudio. Here we can run any git command.
 
-Thrid test
+**Creating forks**
+
+When you create a fork, you create a copy of your project which will be safe while you branch your code and share it with others. We can do this on Github. Important to make a branch and do NOT work on the main branch of the fork. You cannot fork your own project.
+
+1.  Get the project info from another persons project, using create_from_github()
+2.  A new R project will open wich is a version of that persons project.
+3.  Create a branch in the project, remember to choose remote equals "origin".
+4.  Make your changes, save and push to Github.
+5.  In Github, go to that project (which you have access to) and make a pull request.
+6.  The person owning the project will get a message/email and have to accept the merge.
+
+```{r}
+library(usethis)
+
+create_from_github("https://github.com/Beatrice-Trascau/git_os_trial.git", fork = TRUE)
+
+```
+
+**How to rescue the repository**
+
+Solutions for most problems can be found in stackoverflow. Some problems are easy to fix and some are hard.
+
+-   Revert uncommitted changes: Test: Find a file and delete the contents. (b.R). Can revert in the
+
+-   Revert committed changes. "git reset HEAD \~ 1"
+
+-   How to time travel (delete the commit completely): "git rebase". ***A last resort*** for instance if you commit your password. Be careful, and rather try it on a test repo first to know how it works.
+
+-   BFG repo cleaner: Can be used if you by accident commit a large file.
+
+-   Fixing merge conflicts:
+
+Task: Create a merge conflict, by making an edit on the same file in github and locally.
+
+```{r}
+variable_1 <- c("1","2","3")
+
+```
