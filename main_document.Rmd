@@ -8,8 +8,11 @@ First document
 Learning about master files.
 
 ```{r}
+library(usethis)
 
+usethis::git_vaccinate()
 
+usethis::use_github()
 
 ```
 
