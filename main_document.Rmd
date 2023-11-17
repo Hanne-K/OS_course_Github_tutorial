@@ -5,14 +5,17 @@ output: html_notebook
 
 First document
 
-Learning about master files.
+Learning about master files. Can rename the master file to something other than "master". 
 
 ```{r}
 library(usethis)
+library(tidyverse)
 
 usethis::git_vaccinate()
-
 usethis::use_github()
+
+
+
 
 ```
 
