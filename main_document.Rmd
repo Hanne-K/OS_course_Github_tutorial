@@ -72,6 +72,6 @@ Solutions for most problems can be found in stackoverflow. Some problems are eas
 Task: Create a merge conflict, by making an edit on the same file in github and locally.
 
 ```{r}
-variable_1 <- c("1","2","3")
+variable_1 <- c("1","2","3","4","5")
 
 ```
