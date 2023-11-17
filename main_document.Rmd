@@ -33,3 +33,5 @@ The file stores the information about what types of files it should ignore when 
 **Working in the terminal**
 
 In the terminal, we have all the power. Can go to the terminal tab within RStudio. Here we can run any git command.
+
+Thrid test
