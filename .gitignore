@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# My files or folders I want it to ignore when pushing
+.data

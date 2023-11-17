@@ -3,9 +3,11 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-First document
+**First steps**
 
-Learning about master files. Can rename the master file to something other than "master". 
+Learning about master files. Can rename the master file to something other than "master". Committing should be done often,
+
+Problems with setting up Github: If the push-button is not clear green, you have a bad connection. Go to the terminal and write git push.
 
 ```{r}
 library(usethis)
@@ -14,8 +16,20 @@ library(tidyverse)
 usethis::git_vaccinate()
 usethis::use_github()
 
-
-
-
 ```
 
+**Collaborating**
+
+Repositories can be shared, but it is not the best idea unless you trust them completely. A typical problem is that you get merge conflicts. Pulling and pushing is very important if you are working on the same project with someone.
+
+**.gitignore file**
+
+The file stores the information about what types of files it should ignore when committing. Can say ignore the data folder, but make an exception for a specific file in gitignore:
+
+.data
+
+"!data/dragon_taxonomy.csv"
+
+**Working in the terminal**
+
+In the terminal, we have all the power. Can go to the terminal tab within RStudio. Here we can run any git command.
